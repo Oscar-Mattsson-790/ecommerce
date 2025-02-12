@@ -1,3 +1,4 @@
+import { APP_DESCRIPTION, APP_NAME, APP_SLOGAN } from "@/lib/constants";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -12,7 +13,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-import { APP_DESCRIPTION, APP_NAME, APP_SLOGAN } from "@/lib/constants";
 export const metadata: Metadata = {
   title: {
     template: `%s | ${APP_NAME}`,
