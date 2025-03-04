@@ -67,8 +67,8 @@ export default async function Page() {
 
   return (
     <>
-      <HomeCarousel items={data.carousels} />;
-      <div className="md:p-4 md:space-y-4 bg-broder">
+      <HomeCarousel items={data.carousels} />
+      <div className="md:p-4 md:space-y-4 bg-broder bg-gray-100">
         <HomeCard cards={cards} />
 
         <Card>
