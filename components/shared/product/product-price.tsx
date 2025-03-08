@@ -25,7 +25,7 @@ const ProductPrice = ({
   return plain ? (
     formatCurrency(price)
   ) : listPrice == 0 ? (
-    <div className={cn("text-lg", className)}>
+    <div className={cn("text-3xl", className)}>
       <span className="text-xs align-super">$</span>
       {intValue}
       <span className="text-xs align-super">{floatValue}</span>
@@ -43,7 +43,7 @@ const ProductPrice = ({
       <div
         className={`flex ${forListing && "justify-center"} items-center gap-2`}
       >
-        <div className={(cn("text-3xl"), className)}>
+        <div className={cn("text-3xl", className)}>
           <span className="text-xs align-super">$</span>
           {intValue}
           <span className="text-xs align-super">{floatValue}</span>
