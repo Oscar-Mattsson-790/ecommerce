@@ -17,18 +17,20 @@ export default function CartButton() {
   return (
     <Link href="/cart" className="px-1 header-button">
       <div className="flex items-end text-xs relative">
-        <ShoppingCartIcon className="h-8 w-8" />
+        <div className="relative">
+          <ShoppingCartIcon className="h-8 w-8" />
 
-        {isMounted && (
-          <span
-            className={cn(
-              `bg-black px-1 rounded-full text-primary text-base font-bold aboslute right-[30px] top-[-4px] z-10`,
-              cartItemsCount >= 10 && "text-sm px-0 p-[1px]"
-            )}
-          >
-            {cartItemsCount}
-          </span>
-        )}
+          {isMounted && (
+            <span
+              className={cn(
+                `absolute bg-black px-1 rounded-full text-primary text-base font-bold aboslute right-[5.5px] top-[-5px] z-10`,
+                cartItemsCount >= 10 && "text-sm px-0 p-[1px]"
+              )}
+            >
+              {cartItemsCount}
+            </span>
+          )}
+        </div>
         <span className="font-bold">Cart</span>
         {isCartSidebarOpen && (
           <div
