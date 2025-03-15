@@ -708,6 +708,7 @@ const products: IProductInput[] = [
 ];
 
 const data: Data = {
+  users: [], // TA BORT DENNA?
   products,
   headerMenus: [
     {
