@@ -11,12 +11,11 @@ export default function CheckoutFooter() {
       </p>
       <p>
         For an item ordered from {APP_NAME}: When you click the &apos;Place Your
-        Order&apos; button, we will send you an e-mail acknowledging receipt of
-        your order. Your contract to purchase an item will not be complete until
-        we send you an e-mail notifying you that the item has been shipped to
-        you. By placing your order, you agree to {APP_NAME}
-        &apos;s <Link href="/page/privacy-policy">privacy notice</Link>{" "}
-        acknowledging
+        Order&apos; button, we will send you an e-mail and receipt of your
+        order. Your contract to purchase an item will not be complete until we
+        send you an e-mail notifying you that the item has been shipped to you.
+        By placing your order, you agree to {APP_NAME}
+        &apos;s <Link href="/page/privacy-policy">privacy notice</Link> and
         <Link href="/page/conditions-of-use"> conditions of use</Link>.
       </p>
       <p>
