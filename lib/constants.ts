@@ -1,7 +1,8 @@
 export const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME || "eCommerce";
 export const SERVER_URL =
   process.env.NEXT_PUBLIC_SERVER_URL || "http://localhost:3000";
-export const SENDER_EMAIL = process.env.SENDER_EMAIL || "info@racsom.se";
+export const SENDER_EMAIL =
+  process.env.SENDER_EMAIL || "oscar.mattsson.790@gmail.com";
 export const SENDER_NAME = process.env.SENDER_NAME || APP_NAME;
 export const APP_SLOGAN =
   process.env.NEXT_PUBLIC_APP_SLOGAN || "Spend less, enjoy more.";
