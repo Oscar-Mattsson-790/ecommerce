@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import data from "@/lib/data";
 import { connectToDatabase } from ".";
 import Product from "./models/product.model";
@@ -5,7 +6,6 @@ import { loadEnvConfig } from "@next/env";
 import { cwd } from "process";
 import User from "./models/user.model";
 import Review from "./models/review.model";
-import { ReviewInputSchema } from "../validator";
 
 loadEnvConfig(cwd());
 console.log("MONGODB_URI:", process.env.MONGODB_URI);
