@@ -3,7 +3,6 @@
 import * as React from "react";
 import { ThemeProvider as NextThemesProvider, useTheme } from "next-themes";
 import useColorStore from "@/hooks/use-color-store";
-
 export function ColorProvider({
   children,
   ...props
@@ -11,7 +10,6 @@ export function ColorProvider({
   const { theme } = useTheme();
   const { color, updateCssVariables } = useColorStore(theme);
   React.useEffect(() => {
-    console.log("theme, color");
     updateCssVariables();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [theme, color]);

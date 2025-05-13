@@ -2,8 +2,8 @@
 import React from "react";
 import useCartSidebar from "@/hooks/use-cart-sidebar";
 import CartSidebar from "./cart-sidebar";
-import { Toaster } from "../ui/sonner";
 import { ThemeProvider } from "./theme-provider";
+import { Toaster } from "../ui/sonner";
 
 export default function ClientProviders({
   children,
