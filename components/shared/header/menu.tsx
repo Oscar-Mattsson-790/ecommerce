@@ -14,7 +14,7 @@ import ThemeSwitcher from "./theme-switcher";
 export default function Menu() {
   return (
     <div className="flex justify-end">
-      <nav className="md:flex gap-3 hidden w-full">
+      <nav className="hidden md:flex gap-3 w-full">
         <ThemeSwitcher />
         <UserButton />
         <CartButton />
